@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Exchange Rate Logger</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body>
-  <h1>📈 Latest Exchange Rates (USD)</h1>
-  <button id="refresh">🔄 Refresh</button>
+  <h1>📉 Latest Exchange Rates (USD)</h1>
+  <button id="refresh">🔁 Refresh</button>
   <div id="rates">Loading...</div>
 
-  <!-- ✅ FIXED PATH HERE -->
-  <script src="js/main.js"></script>
+  <!-- Load Supabase client from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <!-- Fix this path -->
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
